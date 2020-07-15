@@ -12,3 +12,19 @@ if (userDinner.indexOf('Электричество') != -1 || userDinner.indexOf
     prompt('К моему огорчению, не могу разделить удовольствие от совместной трапезы, ибо я робот и человеческие вкусы мне не близки. Прощайте!');
 }
 
+// Task 2
+
+let firstUserNumber = +prompt('Enter first number, please');
+let secondUserNumber = +prompt('Enter second number, please');
+
+for (let i = firstUserNumber; i <= secondUserNumber; i++) {
+    if (i % 2 === 0 || i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+for (let i = firstUserNumber; i >= secondUserNumber; i--) {
+    if (i % 2 === 0 || i % 5 === 0) {
+        console.log(i);
+    }
+}
