@@ -39,7 +39,7 @@ console.log(dialogAll);
 let firstUserNumber = +prompt('Enter first number, please');
 let secondUserNumber = +prompt('Enter second number, please');
 
-if (firstUserNumber >= secondUserNumber) {
+while (firstUserNumber >= secondUserNumber) {
     secondUserNumber = +prompt('Wrong format. The second number should be greater than the first number. Please enter other second number');
 }
 
@@ -47,4 +47,7 @@ for (let i = firstUserNumber; i <= secondUserNumber; i++) {
     if (i % 2 === 0 || i % 5 === 0) {
         console.log(i);
     }
-}
+}    
+
+
+
